@@ -1,0 +1,5 @@
+{
+  "TestFramework": "pytest",
+  "UnitTestRootDirectory": "TestCases",
+  "UnitTestPattern": "test_*.py"
+}
