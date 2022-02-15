@@ -1,5 +1,5 @@
-from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from src.Extensions.WebDriverSetup import WebDriverSetup
 
 class AboutUsPage(object):
     def __init__(self, driver):
@@ -15,8 +15,4 @@ class AboutUsPage(object):
         self.our_services_link = self.sidebar_links[0]
         self.schedule_consultation_link = self.sidebar_links[1]
         self.about_us_image_section = driver.find_element_by_id("block-5347679b4da120838be3")
-
-
-
-
-
+        self.image = driver.find_elements_by_css_selector("div[id^='yui_3_17_2_1'][id$='67']")[0].find_element_by_tag_name("img")

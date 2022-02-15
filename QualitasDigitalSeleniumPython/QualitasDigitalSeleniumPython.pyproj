@@ -25,10 +25,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="src\Extensions\SeleniumExtensions.py" />
     <Compile Include="src\Extensions\WebDriverSetup.py" />
     <Compile Include="src\PageObjects\AboutUsPage.py" />
     <Compile Include="src\TestCases\test_aboutus.py" />
+    <Compile Include="src\TestData\AboutUsPageTestData.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="LocalSettings\" />
