@@ -29,6 +29,12 @@
     <Compile Include="src\PageObjects\AboutUsPage.py" />
     <Compile Include="src\TestCases\test_aboutus.py" />
     <Compile Include="src\TestData\AboutUsPageTestData.py" />
+    <Compile Include="src\TestData\ContactUsPageTestData.py" />
+    <Compile Include="src\TestData\FaqPageTestData.py" />
+    <Compile Include="src\TestData\HomePageTestData.py" />
+    <Compile Include="src\TestData\PricingAndServicesPageTestData.py" />
+    <Compile Include="src\TestData\ScheduleConsultationPageTestData.py" />
+    <Compile Include="src\TestData\TestimonialsPageTestData.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="LocalSettings\" />
