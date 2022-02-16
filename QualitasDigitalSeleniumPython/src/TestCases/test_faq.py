@@ -9,9 +9,9 @@ class Test_Faq(BaseTest):
         faq_page.validate_load()
     def test_faq_content(self):
         faq_page = FaqPage(self.driver)
-        self.assertEqual(FaqPageTestData.faq_title, faq_page.get_header_content.get_attribute("innerText"))
-        self.assertEqual(FaqPageTestData.faq_subtitle, faq_page.get_sidebar_content.get_attribute("innerText"))
-        self.assertEqual(FaqPageTestData.contactus_link, faq_page.get_contact_us_link.get_attribute("href"))
+        self.assertEqual(FaqPageTestData.faq_title, faq_page.get_header_content().get_attribute("innerText"))
+        self.assertEqual(FaqPageTestData.faq_subtitle, faq_page.get_sidebar_content().get_attribute("innerText"))
+        self.assertEqual(FaqPageTestData.contactus_link, faq_page.get_contact_us_link().get_attribute("href"))
         faqPageExpectedTitles = [
             FaqPageTestData.title_one,
             FaqPageTestData.title_two,
