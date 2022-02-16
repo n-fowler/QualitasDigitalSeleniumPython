@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>41d8a4a3-a760-447b-bfde-97bf50f1498a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>src\TestCases\test_aboutus.py</StartupFile>
+    <StartupFile>src\TestCases\BaseTest.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,8 +26,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="src\Extensions\WebDriverSetup.py" />
+    <Compile Include="src\Locators\AboutUsPageLocators.py" />
+    <Compile Include="src\Locators\ContactUsPageLocators.py" />
     <Compile Include="src\PageObjects\AboutUsPage.py" />
+    <Compile Include="src\PageObjects\BasePage.py" />
+    <Compile Include="src\PageObjects\ContactUsPage.py" />
+    <Compile Include="src\TestCases\BaseTest.py" />
     <Compile Include="src\TestCases\test_aboutus.py" />
+    <Compile Include="src\TestCases\test_contactus.py" />
     <Compile Include="src\TestData\AboutUsPageTestData.py" />
     <Compile Include="src\TestData\ContactUsPageTestData.py" />
     <Compile Include="src\TestData\FaqPageTestData.py" />
@@ -41,6 +47,7 @@
     <Folder Include="src\" />
     <Folder Include="src\Extensions\" />
     <Folder Include="src\LocalConfiguration\" />
+    <Folder Include="src\Locators\" />
     <Folder Include="src\WrapperFactory\" />
     <Folder Include="src\Web\" />
     <Folder Include="src\TestData\" />
