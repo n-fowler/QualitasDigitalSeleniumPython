@@ -12,7 +12,7 @@ class HomePage(BasePage):
     def validate_load(self):
         self.find_element(*self.locator.logo_image)
 
-    def get_link_texts(self):
+    def get_nav_link_texts(self):
         mainNavigation = self.find_element(*self.locator.nav_section)
         linkElements = mainNavigation.find_elements(*self.locator.nav_collection)
         navLinkTexts = []
@@ -22,9 +22,29 @@ class HomePage(BasePage):
                 navLinkTexts.append(text)
         return navLinkTexts
 
-    def get_link_urls(self):
+    def get_nav_link_urls(self):
         mainNavigation = self.find_element(*self.locator.nav_section)
         linkElements = mainNavigation.find_elements(*self.locator.nav_collection)
+        navLinkUrls = []
+        for element in linkElements:
+            text = element.find_element(By.TAG_NAME, "a").get_attribute("href")
+            if(text != ""):
+                navLinkUrls.append(text)
+        return navLinkUrls
+
+    def get_footer_link_texts(self):
+        footerNavigation = self.find_element(*self.locator.footer_nav)
+        linkElements = footerNavigation.find_elements(*self.locator.nav_collection)
+        navLinkTexts = []
+        for element in linkElements:
+            text = element.find_element(By.TAG_NAME, "a").find_element(By.TAG_NAME, "span").get_attribute("innerText")
+            if(text != ""):
+                navLinkTexts.append(text)
+        return navLinkTexts
+
+    def get_footer_link_urls(self):
+        footerNavigation = self.find_element(*self.locator.footer_nav)
+        linkElements = footerNavigation.find_elements(*self.locator.nav_collection)
         navLinkUrls = []
         for element in linkElements:
             text = element.find_element(By.TAG_NAME, "a").get_attribute("href")
