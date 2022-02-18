@@ -7,6 +7,7 @@ class BasePage(object):
     def __init__(self, driver, base_url='https://www.qualitasdigital.com/'):
         self.base_url = base_url
         self.driver = driver
+        self.driver.implicitly_wait(10)
         self.timeout = 30
 
     def find_element(self, *locator):
