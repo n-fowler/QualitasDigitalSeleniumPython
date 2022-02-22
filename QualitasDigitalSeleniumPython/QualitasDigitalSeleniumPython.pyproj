@@ -32,6 +32,7 @@
     <Compile Include="src\Locators\HomePageLocators.py" />
     <Compile Include="src\Locators\NewsAndNotesPageLocators.py" />
     <Compile Include="src\Locators\PricingAndServicesPageLocators.py" />
+    <Compile Include="src\Locators\ScheduleConsultationPageLocators.py" />
     <Compile Include="src\PageObjects\AboutUsPage.py" />
     <Compile Include="src\PageObjects\BasePage.py" />
     <Compile Include="src\PageObjects\ContactUsPage.py" />
@@ -39,6 +40,7 @@
     <Compile Include="src\PageObjects\HomePage.py" />
     <Compile Include="src\PageObjects\NewsAndNotesPage.py" />
     <Compile Include="src\PageObjects\PricingAndServicesPage.py" />
+    <Compile Include="src\PageObjects\ScheduleConsultationPage.py" />
     <Compile Include="src\TestCases\BaseTest.py" />
     <Compile Include="src\TestCases\test_aboutus.py" />
     <Compile Include="src\TestCases\test_contactus.py" />
@@ -46,6 +48,7 @@
     <Compile Include="src\TestCases\test_home.py" />
     <Compile Include="src\TestCases\test_newsandnotes.py" />
     <Compile Include="src\TestCases\test_pricingandservices.py" />
+    <Compile Include="src\TestCases\test_scheduleconsultation.py" />
     <Compile Include="src\TestData\AboutUsPageTestData.py" />
     <Compile Include="src\TestData\ContactUsPageTestData.py" />
     <Compile Include="src\TestData\FaqPageTestData.py" />
