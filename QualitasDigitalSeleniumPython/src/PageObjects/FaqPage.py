@@ -34,12 +34,12 @@ class FaqPage(BasePage):
     def get_faq_page_titles(self):
         faq_page_actual_titles = []
         for left_title in self.get_left_titles():
-            faq_page_actual_titles.append((left_title).encode('utf-8'))
+            faq_page_actual_titles.append((left_title))
         for right_title in self.get_right_titles():
-            faq_page_actual_titles.append((right_title).encode('utf-8'))
+            faq_page_actual_titles.append((right_title))
     def get_faq_page_bodies(self):
         faq_page_actual_bodies = []
         for left_body in self.get_left_bodies():
-            faq_page_actual_bodies.append((left_body).encode('utf-8'))
+            faq_page_actual_bodies.append((left_body))
         for right_body in self.get_right_bodies():
-            faq_page_actual_bodies.append((right_body).encode('utf-8'))
+            faq_page_actual_bodies.append((right_body))

@@ -13,22 +13,22 @@ class Test_Testimonials(BaseTest):
 
         #There should be a centered review in green #0d5
         self.assertEqual(TestimonialsPageTestData.highlighted_review_content, testimonials_page.get_highlighted_review_content().get_attribute("innerText"))
-        self.assertEqual("rgba(0, 221, 85, 1)", testimonials_page.get_highlighted_review_content().get_attribute("color"))
+        self.assertEqual("rgba(0, 221, 85, 1)", testimonials_page.get_highlighted_review_content().value_of_css_property("color"))
         self.assertEqual(TestimonialsPageTestData.highlighted_review_author, testimonials_page.get_highlighted_review_author().get_attribute("innerText"))
-        self.assertEqual("rgba(0, 221, 85, 0.6)", testimonials_page.get_highlighted_review_author().get_attribute("color"))
+        self.assertEqual("rgba(0, 221, 85, 0.6)", testimonials_page.get_highlighted_review_author().value_of_css_property("color"))
 
         #There should be a mid page title 'Others have had this to say...
         self.assertEqual(TestimonialsPageTestData.mid_page_title, testimonials_page.get_midpage_title().get_attribute("innerText"))
 
         #The mid page title isn't the same color as the highlighted review
-        self.assertNotEqual("rgba(0, 221, 85, 1)", testimonials_page.get_midpage_title().get_attribute("color"))
+        self.assertNotEqual("rgba(0, 221, 85, 1)", testimonials_page.get_midpage_title().value_of_css_property("color"))
 
         #Validate that the color of linked in review elements isn't the same as the highlighted review
-        self.assertNotEqual("rgba(0, 221, 85, 1)", testimonials_page.get_review_one_content().get_attribute("color"))
-        self.assertNotEqual("rgba(0, 221, 85, 1)", testimonials_page.get_review_two_content().get_attribute("color"))
-        self.assertNotEqual("rgba(0, 221, 85, 1)", testimonials_page.get_review_three_content().get_attribute("color"))
-        self.assertNotEqual("rgba(0, 221, 85, 1)", testimonials_page.get_review_four_content().get_attribute("color"))
-        self.assertNotEqual("rgba(0, 221, 85, 1)", testimonials_page.get_review_five_content().get_attribute("color"))
+        self.assertNotEqual("rgba(0, 221, 85, 1)", testimonials_page.get_review_one_content().value_of_css_property("color"))
+        self.assertNotEqual("rgba(0, 221, 85, 1)", testimonials_page.get_review_two_content().value_of_css_property("color"))
+        self.assertNotEqual("rgba(0, 221, 85, 1)", testimonials_page.get_review_three_content().value_of_css_property("color"))
+        self.assertNotEqual("rgba(0, 221, 85, 1)", testimonials_page.get_review_four_content().value_of_css_property("color"))
+        self.assertNotEqual("rgba(0, 221, 85, 1)", testimonials_page.get_review_five_content().value_of_css_property("color"))
 
         #There should be five linked in based reviews that also aren't in green
         self.assertEqual(TestimonialsPageTestData.review_one_content, testimonials_page.get_review_one_content().get_attribute("innerText"))

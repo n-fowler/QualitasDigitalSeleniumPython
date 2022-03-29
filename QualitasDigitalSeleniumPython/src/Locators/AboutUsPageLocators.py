@@ -11,4 +11,4 @@ class AboutUsPageLocators(object):
     our_services_link = (By.XPATH, "//*[@id='block-54dfc3255ea4a1352072']/div/p[2]/a[1]")
     schedule_consultation_link = (By.XPATH, "//*[@id='block-54dfc3255ea4a1352072']/div/p[2]/a[2]")
     about_us_image_section = (By.ID,"block-5347679b4da120838be3")
-    image = (By.CSS_SELECTOR, "div[id^='yui_3_17_2_1'][id$='67']")
+    image = (By.CSS_SELECTOR, "div[id^='yui_3_17_2_1'][id$='68']")
