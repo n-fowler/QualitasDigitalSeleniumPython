@@ -11,6 +11,8 @@ class Test_Testimonials(BaseTest):
     def test_testimonials_content(self):
         testimonials_page = TestimonialsPage(self.driver)
 
+        self.maxDiff = None
+
         #There should be a centered review in green #0d5
         self.assertEqual(TestimonialsPageTestData.highlighted_review_content, testimonials_page.get_highlighted_review_content().get_attribute("innerText"))
         self.assertEqual("rgba(0, 221, 85, 1)", testimonials_page.get_highlighted_review_content().value_of_css_property("color"))
